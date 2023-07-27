@@ -4,13 +4,20 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class AllAlertTypes {
 	static WebDriver driver;
 
 	public static void main(String[] args) throws InterruptedException {
-		BrowserUtil brUtil = new BrowserUtil();
-		driver = brUtil.launchBrowser("chrome");
+//		BrowserUtil brUtil = new BrowserUtil();
+//		driver = brUtil.launchBrowser("chrome");
+		
+		ChromeOptions opt = new ChromeOptions();
+		opt.addArguments("--remote-allow-origins=*");
+		// Launching the browser
+		driver=new ChromeDriver(opt);
 		driver.get("https://the-internet.herokuapp.com/javascript_alerts");
 		driver.manage().window().maximize();
 		Thread.sleep(2000);

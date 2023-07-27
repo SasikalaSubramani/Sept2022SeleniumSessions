@@ -11,13 +11,13 @@ public class CustomXpath {
 		///html/body/div[2]/div/div/div/div[2]/div/h2
 		
 		//relative xpath
-		////htmltag[@attribute = 'value']
+		//htmltag[@attribute = 'value']
 		//htmltag[@attribute = 'value' and @attribute = 'value'  and @attribute = 'value']
 		//htmltag[@attribute = 'value' or @attribute = 'value'}
 		// we can use both and, or
 		
 		//text()
-		// test is not an attribute it is function
+		// text is not an attribute it is function
 		//htmltag[text()='value']
 		//h2[text()='Customer']
 		
@@ -36,7 +36,7 @@ public class CustomXpath {
 		//h2[contains(text(),'New')]
 		
 		//2 Attributes 1 with contain() one with out contains		
-		//htmltag[contains(text(),'value') and @att1=''value and @attr2='value']
+		//htmltag[contains(text(),'value') and @att1='value' and @attr2='value']
 		
 		//starts-with()
 		//htmaltag[starts-with(@att,@value)]

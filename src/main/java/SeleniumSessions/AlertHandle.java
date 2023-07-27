@@ -22,6 +22,7 @@ public class AlertHandle {
 		String text = alert.getText();
 		System.out.println(text);
 
+		//alert.sendKeys("12345");
 		alert.accept();
 //		alert.dismiss();
 
