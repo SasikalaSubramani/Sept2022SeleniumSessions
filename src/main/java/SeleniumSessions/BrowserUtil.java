@@ -18,11 +18,12 @@ public class BrowserUtil {
 
 		switch (browserName.toLowerCase().trim()) {
 		case "chrome":
-			System.setProperty("webdriver.chrome.driver", "D:\\Automation\\driver\\chromedriver.exe");
-
-			ChromeOptions opt = new ChromeOptions();
-			opt.addArguments("--remote-allow-origins=*");
-			driver = new ChromeDriver(opt);
+//			System.setProperty("webdriver.chrome.driver", "D:\\Automation\\driver\\chromedriver.exe");
+//
+//			ChromeOptions opt = new ChromeOptions();
+//			opt.addArguments("--remote-allow-origins=*");
+//			driver = new ChromeDriver(opt);
+			driver = new ChromeDriver();
 			break;
 		case "firefox":
 			System.setProperty("webdriver.gecko.driver", "D:\\Automation\\driver\\geckodriver.exe");

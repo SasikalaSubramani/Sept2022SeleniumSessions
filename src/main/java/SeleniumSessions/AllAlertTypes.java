@@ -11,14 +11,18 @@ public class AllAlertTypes {
 	static WebDriver driver;
 
 	public static void main(String[] args) throws InterruptedException {
-//		BrowserUtil brUtil = new BrowserUtil();
-//		driver = brUtil.launchBrowser("chrome");
+		BrowserUtil brUtil = new BrowserUtil();
+		driver = brUtil.launchBrowser("chrome");
 		
-		ChromeOptions opt = new ChromeOptions();
-		opt.addArguments("--remote-allow-origins=*");
-		// Launching the browser
-		driver=new ChromeDriver(opt);
+//		ChromeOptions opt = new ChromeOptions();
+//		opt.addArguments("--remote-allow-origins=*");
+//		// Launching the browser
+//		driver=new ChromeDriver(opt);
+		
+//		driver = new ChromeDriver();
 		driver.get("https://the-internet.herokuapp.com/javascript_alerts");
+		
+		
 		driver.manage().window().maximize();
 		Thread.sleep(2000);
 		
